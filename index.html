@@ -14,6 +14,10 @@
   <body>
     <h1>Hello, PWA!</h1>
     
+    <h2>Notification</h2>
+    <input type="text" id="notification" placeholder="Enter Notification" />
+    <button id="btn-send-notification">Send Notification</button>
+    
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("service-worker.js");
