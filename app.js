@@ -2,6 +2,10 @@ document
   .querySelector("#btn-send-notification")
   .addEventListener("click", sendNotification); // Add an event listener to the button with the ID "btn-send-notification"
   
+  document
+  .querySelector("#btn-geolocation")
+  .addEventListener("click", getGeolocation); // Add an event listener to the button with the ID "btn-geolocation"
+
 
 async function sendNotification() {
   const notificationValue = document.querySelector("#notification").value; // Get the notification message
@@ -40,9 +44,6 @@ async function showNotification(body) {
 }
 
 
-document
-  .querySelector("#btn-geolocation")
-  .addEventListener("click", getGeolocation); // Add an event listener to the button with the ID "btn-geolocation"
 
 async function getGeolocation() {
   const geolocation = document.querySelector("#geolocation"); // Get the geolocation element
